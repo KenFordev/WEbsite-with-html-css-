@@ -15,43 +15,53 @@
 <body>
     <main>
         <div class="container">
+            <div class="container__main">
                 <nav class="container-nav">
+
+                    <div class="hamberger__menu" id="hamberger__toggle">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+
                     <div class="logo">
                         <img src="/images/logo.png">
                         <h2>BlueRex</h2>
                     </div>
-                
-                    <ul class="nav-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">Reviews</a></li>
-                        <li><a href="#">Faq</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+                    
+                    <div class="nav-right">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
                 </nav>
      
-                <div class="container__main">
-                    <section class="profile__container">
-                        <article class="profile__content">
-                            <h1>We are best creative agency</h1>
-                            <h2>We turn creative ideas <br>into your business.</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                                Minima recusandae,perspiciatis iste pariatur nulla quidem!.
-                            </p>
                 
-                            <div class="btn">
-                                <a href="#" class="our">Our Story</a>
-                                <a href="#" class="read">Read More</a>
-                            </div>
-                        </article>
+                <section class="profile__container">
+                    <article class="profile__content">
+                        <h1>We are best creative agency</h1>
+                        <h2>We turn creative ideas <br>into your business.</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minima recusandae,perspiciatis iste pariatur nulla quidem!.
+                        </p>
+            
+                        <div class="btn">
+                            <a href="#" class="our">Our Story</a>
+                            <a href="#" class="read">Read More</a>
+                        </div>
+                    </article>
 
-                            <div class="profile__img">
-                                <img src="/images/pic01.png">
-                            </div>
-                    </section>
-                </div>
+                        <div class="profile__img">
+                            <img src="/images/pic01.png">
+                        </div>
+                </section>
+            </div>
         </div>
         <!-- =========== end of profile ============= -->
         <section class="container__watch">
@@ -89,7 +99,7 @@
         
         <section class="container__icon">
             <div class="container__main">
-                <div class="icon__grid">
+                <div class="icon__grid" id="icon__margin">
                     <div class="icon__item">
                         <img src="/images/logo2.png">
                         <h1>500+</h1>
@@ -174,9 +184,11 @@
                     </div>
                     
                     <div class="middle__right">
-                        <video width="556" height="600" controls muted loop>
-                            <source src="/video/movie.mp4" type="video/mp4">
-                          </video>
+                        <div class="middle__right-item">
+                            <video width="556" height="600" autoplay muted loop>
+                                <source src="/video/movie.mp4" type="video/mp4">
+                              </video>
+                        </div>
                     </div>
 
                 </div>
@@ -197,19 +209,19 @@
                         <a href="#">Branding</a>
                     </div>
                 </div>
-                    <div class="product__flex">
-                        <div class="product__item-grid">
-                            <img src="/images/picsec1.png" alt="">
-                            <img src="/images/picsec2.png" alt="">
-                            <img src="/images/picsec3.png" alt="">
-                            <img src="/images/picsec4.png" alt="">
-                            <img src="/images/picsec5.png" alt="">
-                            <img src="/images/picsec6.png" alt="">
-                            <img src="/images/picsec7.png" alt="">
-                            <img src="/images/picsec8.png" alt="">
-                            <img src="/images/picsec9.png" alt="">
-                        </div>
+                <div class="product__flex">
+                    <div class="product__item-grid" id="product__item--grid">
+                        <img src="/images/picsec1.png" alt="">
+                        <img src="/images/picsec2.png" alt="">
+                        <img src="/images/picsec3.png" alt="">
+                        <img src="/images/picsec4.png" alt="">
+                        <img src="/images/picsec5.png" alt="">
+                        <img src="/images/picsec6.png" alt="">
+                        <img src="/images/picsec7.png" alt="">
+                        <img src="/images/picsec8.png" alt="">
+                        <img src="/images/picsec9.png" alt="">
                     </div>
+                </div>
                 <div class="btn__product">
                     <a href="#">Read more</a>
                 </div>
@@ -219,7 +231,7 @@
         <section class="brand__main">
             <div class="container__main">
                 <div class="brand__container">
-                    <div class="brand__grid">
+                    <div class="brand__grid" id="brand__grid-mobile">
                         <div class="brand__grid-item">
                             <img src="/images/brand1.png">
                         </div>
@@ -262,8 +274,10 @@
                             <img src="/images/font.png">
                         </div>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, saepe. Eveniet vitae iste ut magnam pariatur repellendus aperiam deleniti? Aspernatur?</p>
-                        <img src="/images/starts.png">
-                        <h4>Mr.John Doe</h4>
+                        <div class="test__score">
+                            <img src="/images/starts.png">
+                            <h4>Mr.John Doe</h4>
+                        </div>
                     </div>
                     <div class="test__right">
                         <img src="/images/pic02.png">
@@ -354,6 +368,7 @@
 
                             </div>
                         </div>
+                        
                         <div class="footer__right">
                             <div class="footer__right-grid">
                                 <div class="footer__right-item">
